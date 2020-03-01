@@ -39,12 +39,15 @@ tags: 寒訓
 
  > 憑證弄好了可以來這邊回報一下
  > [color=red]
- > > 我要"kulimi.cnmc.tw"作為我的域名(希望
+ > > 我要"kulimi.cnmc.tw"作為我的域名(希望  
  > > 220.135.245.148
  > > [name=kulimi][color=orange]
- > > 我要 ddos.cnmc.tw 拉
+ > > 我要 ddos.cnmc.tw 拉  
  > > 140.131.149.22
  > > [name=hahabox0]
+ > > jaylin.cnmc.tw  
+ > > 140.131.149.30
+ > > [name=jaylin]
 
 ## Day2 Nginx
 **keyword: nginx**
@@ -72,7 +75,7 @@ tags: 寒訓
  > [name=Sirius][color=blue]
 ## Q&A + 討論區
 
-[提問的智慧](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way)
+[提問的智慧](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way)  
 如果遇到什麼困難就丟上來，但是如果社長我覺得你的問題不值得回答（可以快速查到）或描述不夠清楚，就不會回答你，但是會告訴你我不回答。  
 請使用 `quote`:
 ### Unix 切到外接磁碟
@@ -167,7 +170,6 @@ socket.gaierror: [Errno 8] nodename nor servname provided, or not known
  > 他有說到`Cannot find an SSLCertificateFile directive in /files/private/etc/apache2/httpd-le-ssl.conf/IfModule/VirtualHost. VirtualHost was not modified`
  > 可是這個資料夾根本不存在，應該說根目錄下根本沒有`files/`，我也不知道`SSLCertificateFile`這是什麼，不過看起來有可能是指下面提到的`/etc/letsencrypt/live/kulimi.cnmc.tw/fullchain.pem`，最後我去看了一下他提到的`Virtual Host`，在`httpd.conf`有相關的設定，長得像下面那樣。
  > [name=kulimi][color=orange]
- > > 我喜歡你的問題。  
  > > 是這樣的，certbot 會幫你把憑證弄出來但是要怎麼用是你的事，也就是說，要讓他網頁伺服器上跑你需要手動對付他。我不知道 MacOS 的設定是如何，可以找找看一個叫做`httpd-ssl.conf`的檔案，裡面就會有 `SSLCertificateFile` 的地方可以設定，然後在你下面的紀錄的第10及12行，他有兩個檔案，兩個檔案都要放進 apache 的設定檔裡面。  
  > > [MacOS Apache Setup: SSL](https://getgrav.org/blog/macos-catalina-apache-ssl) 這篇文章可以看一下  
  > > 
@@ -222,8 +224,7 @@ IMPORTANT NOTES:
  > > 突然想到 FreeBSD 如果 Apache 有問題 restart 會報錯，而且要看狀況會用 service apache24 status
  > > [name=Sirius][color=blue]
 
- > 有人提到用 `openssl` 來弄憑證，這邊是網管第十屆的總組長寫的，文章裡面提到的"高中社團寒訓"就是去年的高二XD  
- > [Create a self-signed certificate using OpenSSL](https://blog.cssuen.tw/create-a-self-signed-certificate-using-openssl-240c7b0579d3)
+ > 有人提到用 `openssl` 來弄憑證，這篇 [Create a self-signed certificate using OpenSSL](https://blog.cssuen.tw/create-a-self-signed-certificate-using-openssl-240c7b0579d3) 是網管第十屆的總組長寫的，文章裡面提到的"高中社團寒訓"就是去年的高二XD  
  > [name=Sirius][color=blue]
 ### Day2
 >裝了很多套件以後建議裝一個port tree
